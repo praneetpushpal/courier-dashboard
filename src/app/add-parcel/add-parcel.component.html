@@ -1,0 +1,34 @@
+<div class="container justify-content-center">
+  <form class="form-signin" [formGroup]="addParcelForm" (ngSubmit)="onSubmit()">
+    <h1 class="h3 mb-3 font-weight-normal">Enter Parcel Details</h1>
+    <div class="form-group">
+      <label for="inputSourceAddress" class="sr-only">SourceAddress</label>
+      <input type="text" id="inputSourceAddress" [formControlName]="'sourceAddress'" class="form-control" placeholder="SourceAddress" required="" autofocus="">
+    </div>
+    <div class="form-group">
+      <label for="inputDestinationAddress" class="sr-only">Email</label>
+      <input type="text" id="inputDestinationAddress" [formControlName]="'destinationAddress'"class="form-control" placeholder="DestinationAddress" required="" autofocus="">
+    </div>
+    <div class="form-group">
+      <label for="inputItemType" class="sr-only">Password</label>
+      <input type="text" id="inputItemType" [formControlName]="'itemType'" class="form-control" placeholder="ItemType" required="">
+    </div>
+    <div class="form-group">
+      <label for="inputWeight" class="sr-only">Password</label>
+      <input type="text" id="inputWeight" [formControlName]="'weight'" class="form-control" placeholder="Weight" required="">
+    </div>
+    <div class="form-group">
+      <label for="inputPrice" class="sr-only">Password</label>
+      <input type="text" id="inputPrice" [formControlName]="'price'" class="form-control" placeholder="Price" required="">
+    </div>
+    <div class="form-group">
+      <label for="inputPickupDate" class="sr-only">Password</label>
+      <input type="text" id="inputPickupDate" [formControlName]="'pickupDate'" class="form-control" placeholder="PickupDate" required="">
+    </div>
+    <div class="form-group">
+      <label for="inputExpectedDelivery" class="sr-only">Password</label>
+      <input type="text" id="inputExpectedDelivery" [formControlName]="'expectedDelivery'" class="form-control" placeholder="ExpectedDelivery" required="">
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Enter</button>
+  </form>
+</div>
